@@ -1,0 +1,32 @@
+.loaderPageProgressContainer {
+    display: block;
+    background: #F6F6F6;
+    border: 1px solid #C6C7C9;
+    border-radius: 100em;
+    width: 80%;
+    margin: 0
+}
+
+.loaderPageProgress {
+    height: 40px;
+    padding: 3px;
+    overflow: visible;
+}
+
+.loaderPageProgressBar {
+    background-color:#00c8a5;
+    height: 100%;
+    text-align: center;
+    transition: all 0.1s ease;
+    border-radius: 100em;
+}
+
+.pusherMessageModal {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .loaderPageProgressContainer {
+        width: 90%;
+    }
+}

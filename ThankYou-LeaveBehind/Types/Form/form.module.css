@@ -1,0 +1,199 @@
+.container {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.postFormTitleContainer {
+    width: 100%;
+    height: 100%;
+    max-width: 1044px;
+    max-height: 1044px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+    display: block;
+    color: black;
+    opacity: 0.9;
+}
+
+.formTitle {
+    font-size: 27px;
+    margin-top: 22px;
+    color: black;
+    opacity: 0.9;
+}
+
+.formPostTitle {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.formPostTitle2 {
+    margin-top: 4px;
+    font-size: 15px;
+}
+
+.dynamicFormContainer {
+    border: 2px solid #E1E1E1;
+    box-shadow: 3px 3px 0 rgb(225 225 225 / 50%);
+    width: 100%;
+    height: 100%;
+    max-width: 1044px;
+    max-height: 1044px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    min-height: 34px;
+    overflow: hidden;
+    transition: all .75s ease-in-out, padding-bottom 1s ease-in-out;
+    transition-delay: 0s;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.collapsed {
+    max-height: 38px;
+    padding-bottom: 0;
+}
+
+.closedForm {
+    transition: none;
+    max-height: 38px;
+    padding-bottom: 0;
+}
+
+.headerContainer {
+    height: 34px;
+    min-height: 34px;
+    background-color: #4297ff;
+    text-align: center;
+    width: 100%;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    justify-content: center;
+}
+
+.headerTitle {
+    font-weight: 600;
+}
+
+.headerIcon {
+    float: right;
+    width: 16px;
+    position: absolute;
+    right: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.progressBarContainer {
+    width: 90%;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.progressBarMain {
+    width: 100%;
+    height: 6px;
+    background-color: #e9ecef;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progressBarFill {
+    background-color: #2E82F9;
+    min-width: 8%;
+    height: 6px;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+
+.progressBarText {
+    padding-top: 2px;
+    font-size: 14px;
+    color: #5DB432;
+}
+
+.parentFormContainer3 {
+    justify-content: space-evenly;
+}
+
+.questionTitle {
+    width: 100%;
+    text-align: center;
+    color: #0E1E4F;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.questionTitle2 {
+    width: 100%;
+    text-align: center;
+    color: #0E1E4F;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.buttonGrid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 100%;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    color: #5b5b5c;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 3px 3px 0 rgba(225, 225, 225, .5);
+    background-color: white;
+    padding: 12px 0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+    border-color: #2E82F9;
+    box-shadow: 3px 3px 0 rgba(46, 130, 249, .45);
+}
+
+.selected {
+    border-color: #2E82F9;
+    box-shadow: 3px 3px 0 rgba(46, 130, 249, .45);
+}
+
+.spacedButtons {
+    width: 90%;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 300px) {
+    .postFormTitleContainer {
+        margin-right: 0;
+        max-width: 90vw;
+    }
+
+    .formTitle {
+        margin-right: 0;
+        max-width: 90vw;
+    }
+
+    .dynamicFormContainer {
+        margin-right: 0;
+        max-width: 90vw
+    }
+}

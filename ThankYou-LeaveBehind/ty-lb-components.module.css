@@ -1,0 +1,318 @@
+
+.phoneContainer {
+    justify-content: flex-end;
+    width: 100%;
+    align-items: flex-end;
+    display: inline-flex;
+    text-align: right;
+    padding-right: 6rem;
+}
+
+.callAgentDesktopHeader {
+    display: block;
+}
+
+.phoneNumberContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 19px;
+    color: #787678;
+}
+
+.phoneNumber {
+    display: block;
+    margin-top: -10px;
+    color: #008bff;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.phoneNumber:hover {
+    opacity: .8;
+}
+
+.petLBContainer {
+    background-color: #ffffff;
+}
+
+.speakText {
+    margin-top: 5px;
+    color: black;
+    font-weight: 300;
+}
+.headerCTAContainer {
+    display: inline-flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    justify-content: center;
+}
+.availableContainer {
+    margin-top: -8px;
+    padding-bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerContainer {
+    background: rgb(255, 255, 255);
+    font-family: Helvetica, sans-serif;
+    padding-top: 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
+}
+
+.banner {
+    background: url('/images/town-banner.jpg');
+    background-size: contain;
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerTitle {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.tyTitleContainer {
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0 0;
+}
+
+.callTyContainer {
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 2rem;
+    background: #E9E9E9;
+}
+
+.tyTitle {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    line-height: 37px;
+}
+
+.tyTitle2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 8px;
+    line-height: 27px;
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+.tySubTitle {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 300;
+    opacity: .8;
+    text-align: center;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.logoContainer {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 15px;
+    min-height: 65px;
+    justify-content: flex-start;
+}
+
+.providersContainer {
+    text-align: center;
+    margin: 1rem 1rem 2rem;
+}
+
+.logo {
+    width: 115px;
+    height: auto;
+    max-width: 115px;
+}
+
+.phoneContainer {
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: inline-flex;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.phoneNumberContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 19px;
+    color: #787678;
+}
+
+.phoneNumber {
+    display: block;
+    margin-top: -10px;
+    color: #008bff;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.phoneNumber:hover {
+    opacity: .8;
+}
+
+.speakText {
+    margin-top: 5px;
+    color: black;
+    font-weight: 300;
+}
+
+.availableContainer {
+    margin-top: -8px;
+    padding-bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.availableCircle {
+    color: #71b333;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-top: 3px;
+    line-height: .5;
+    margin-right: 3px;
+}
+
+.availableText {
+    color: #787678;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footerContainer {
+    background-color: rgb(51, 51, 51);
+    width: 100vw;
+    max-width: none;
+    padding: 1rem;
+}
+
+.footerLinksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    line-height: 2em;
+    font-size: 11px;
+}
+
+.footerLinksContainer a {
+    margin: auto 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.copyRight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    color: rgb(201, 192, 192);
+    line-height: 2em;
+}
+
+.mcAfeeLogo {
+    border: 1px solid #000;
+    margin: 1rem auto 1rem auto;
+    max-width: 115px;
+    height: 55px;
+}
+
+.disclaimer {
+    color: rgb(201, 192, 192);
+    padding: 0 20px 2rem 20px;
+    font-size: 11px;
+    max-width: 100%;
+    font-family: Helvetica, sans-serif;
+    line-height: 18px;
+}
+
+@media only screen and (max-width: 960px) {
+    .phoneContainer {
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 300px) {
+    .petLBContainer {
+        background-color: rgb(28, 109, 164);
+    }
+    .centerFlexColumn {
+        width: 100%;
+    }
+    .banner {
+        background: none;
+        height: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .bannerTitle {
+        color: black;
+        font-size: 25px;
+    }
+    .phoneContainer {
+        display: none;
+    }
+
+    .headerContainer {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-bottom: 0 solid #ddd;
+    }
+
+    .footerContainer {
+        color: white;
+        padding: 20px 15px;
+        font-size: .8rem;
+        text-align: center;
+        background-color: rgb(51, 51, 51);
+    }
+
+    .footerLinksContainer {
+        width: 91.666667%;
+        margin: 0 auto 12px auto;
+        padding: 0 30px;
+    }
+
+    .footerLinksContainer a, .copyRight, .disclaimer {
+        color: #ffffff;
+    }
+
+    .callTextContainer {
+        padding: 15px;
+    }
+}

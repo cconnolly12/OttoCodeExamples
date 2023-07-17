@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Thank You Page Snapshot Thank You page renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    id="placeClicklisting"
+  />
+  <div
+    className="container mt-5"
+  >
+    <div
+      className="container"
+    />
+  </div>
+</div>
+`;

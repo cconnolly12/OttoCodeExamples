@@ -1,0 +1,697 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1rem;
+    min-height: 500px;
+    height: 100%;
+}
+
+.petContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    min-height: 250px;
+    height: 100%;
+}
+
+.overlay {
+    width: 65%;
+    border: solid 1px;
+    height: 100vh;
+    display: inline-flex;
+    position: relative;
+    max-height: 400px;
+    text-align: center;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+.animatedMultipleOverlay {
+    width: 80%;
+    max-width: 1100px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.commercialTitle {
+    width: 100%;
+    padding: 0 15%;
+    text-align: center;
+    font-size: 25px;
+    margin: 2rem 0 -3rem;
+    font-weight: 700;
+}
+
+.multipleHeightChange {
+    min-height: 85vh;
+    height: 100%;
+    max-height: 1200px;
+}
+
+.moreMarginTopBottom {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.adContainer {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px;
+    background-color: #e6ffe6;
+    border-radius: 12px;
+}
+
+.adContainerRevised {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 1100px;
+    max-width: 95%;
+    padding: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 0px #999999;
+    border-radius: 12px;
+}
+
+.adContainerAnimatedMultiple {
+    position: relative;
+    margin-bottom: 1rem;
+    max-width: 1100px;
+    width: 95%;
+}
+
+.offerContainer {
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+
+.offerContainerAnimatedMultiple {
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+
+.title {
+    flex: 2;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #3d8cec;
+}
+
+.logoOrOffer {
+    flex: 7;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logoContainer {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%;
+    width: fit-content;
+}
+
+.swipeIn {
+    margin-right: inherit;
+    animation: swipeInKey .1s linear;
+    animation-fill-mode: forwards;
+}
+
+.swipeOut {
+    margin-left: inherit;
+    animation: swipeOutKey .1s;
+    animation-fill-mode: forwards;
+}
+
+.offerLogoContainer {
+    width: 100%;
+    max-height: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.offerLogo {
+    max-width: 400px;
+}
+
+.offerLogoAnimatedMultiple {
+    max-width: 400px;
+}
+
+.offerButton {
+    width: 20rem;
+    max-width: 95vw;
+    color: white;
+    background: #30cc54;
+    border: none;
+    border-radius: 16px;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 5px -1px rgb(0 0 0 / 80%);
+    transition: all .5s ease-in-out;
+    animation: pulseButton 2s infinite;
+}
+
+.offerButtonAnimatedMultiple {
+    width: 20rem;
+    max-width: 95vw;
+    color: white;
+    background: #30cc54;
+    border: none;
+    border-radius: 16px;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 5px -1px rgb(0 0 0 / 80%);
+    transition: all .5s ease-in-out;
+    animation: pulseButton 2s infinite;
+}
+
+.additionalCTAContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 12px;
+    color: rgb(37, 129, 254);
+    font-weight: 500;
+    transition: all .25s ease-in-out;
+    text-align: center;
+}
+
+.additionalOfferCTA {
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    white-space: nowrap;
+    background: rgb(37, 129, 254);
+    padding: 10px 15px;
+    margin: 2rem auto 6px auto;
+    border-radius: 6px;
+    transition: all .25s ease-in-out;
+    width: auto;
+}
+
+.additionalOfferCTA:hover {
+    text-decoration: underline;
+}
+
+.offerButton:hover {
+    box-shadow: 0 2px 8px -1px rgb(0 0 0 / 80%);
+}
+
+.offerButtonAnimatedMultiple:hover {
+    box-shadow: 0 2px 8px -1px rgb(0 0 0 / 80%);
+}
+
+@keyframes pulseButton {
+    0% {
+        box-shadow: 0 2px 5px -1px rgb(0 0 0 / 80%);
+    }
+    50% {
+        box-shadow: 0 2px 8px -1px rgb(0 0 0 / 80%);
+    }
+    100% {
+        box-shadow: 0 2px 5px -1px rgb(0 0 0 / 80%);
+    }
+}
+
+@keyframes swipeInKey {
+    0% {
+        margin-right: -100vw;
+    }
+    5% {
+        margin-right: -95vw;
+    }
+    10% {
+        margin-right: -90vw;
+    }
+    15% {
+        margin-right: -85vw;
+    }
+    20% {
+        margin-right: -80vw;
+    }
+    25% {
+        margin-right: -75vw;
+    }
+    30% {
+        margin-right: -70vw;
+    }
+    35% {
+        margin-right: -65vw;
+    }
+    40% {
+        margin-right: -60vw;
+    }
+    45% {
+        margin-right: -55vw;
+    }
+    50% {
+        margin-right: -50vw;
+    }
+    55% {
+        margin-right: -45vw;
+    }
+    60% {
+        margin-right: -40vw;
+    }
+    65% {
+        margin-right: -35vw;
+    }
+    70% {
+        margin-right: -30vw;
+    }
+    75% {
+        margin-right: -25vw;
+    }
+    80% {
+        margin-right: -20vw;
+    }
+    83% {
+        margin-right: -18vw;
+    }
+    86% {
+        margin-right: -16vw;
+    }
+    90% {
+        margin-right: -12vw;
+    }
+    92% {
+        margin-right: -10vw;
+    }
+    94% {
+        margin-right: -6vw;
+    }
+    95% {
+        margin-right: -5vw;
+    }
+    96% {
+        margin-right: -4vw;
+    }
+    97% {
+        margin-right: -3vw;
+    }
+    98% {
+        margin-right: -3vw;
+    }
+    99% {
+        margin-right: -2vw;
+    }
+    100% {
+        margin-right: 0;
+    }
+}
+
+@keyframes swipeInKeyMobile {
+    0% {
+        margin-right: -200vw;
+    }
+    5% {
+        margin-right: -180vw;
+    }
+    10% {
+        margin-right: -160vw;
+    }
+    15% {
+        margin-right: -140vw;
+    }
+    20% {
+        margin-right: -110vw;
+    }
+    25% {
+        margin-right: -100vw;
+    }
+    30% {
+        margin-right: -85vw;
+    }
+    35% {
+        margin-right: -70vw;
+    }
+    40% {
+        margin-right: -60vw;
+    }
+    45% {
+        margin-right: -55vw;
+    }
+    50% {
+        margin-right: -50vw;
+    }
+    55% {
+        margin-right: -45vw;
+    }
+    60% {
+        margin-right: -40vw;
+    }
+    65% {
+        margin-right: -35vw;
+    }
+    70% {
+        margin-right: -30vw;
+    }
+    75% {
+        margin-right: -25vw;
+    }
+    80% {
+        margin-right: -20vw;
+    }
+    83% {
+        margin-right: -18vw;
+    }
+    86% {
+        margin-right: -16vw;
+    }
+    90% {
+        margin-right: -12vw;
+    }
+    92% {
+        margin-right: -10vw;
+    }
+    94% {
+        margin-right: -6vw;
+    }
+    95% {
+        margin-right: -5vw;
+    }
+    96% {
+        margin-right: -4vw;
+    }
+    97% {
+        margin-right: -3vw;
+    }
+    98% {
+        margin-right: -3vw;
+    }
+    99% {
+        margin-right: -2vw;
+    }
+    100% {
+        margin-right: 0;
+    }
+}
+
+@keyframes swipeOutKey {
+
+    0% {
+        margin-left: 0;
+    }
+    5% {
+        margin-left: -5vw;
+    }
+    10% {
+        margin-left: -10vw;
+    }
+    15% {
+        margin-left: -15vw;
+    }
+    20% {
+        margin-left: -20vw;
+    }
+    25% {
+        margin-left: -25vw;
+    }
+    30% {
+        margin-left: -30vw;
+    }
+    35% {
+        margin-left: -35vw;
+    }
+    40% {
+        margin-left: -40vw;
+    }
+    45% {
+        margin-left: -45vw;
+    }
+    50% {
+        margin-left: -50vw;
+    }
+    55% {
+        margin-left: -55vw;
+    }
+    60% {
+        margin-left: -60vw;
+    }
+    65% {
+        margin-left: -65vw;
+    }
+    70% {
+        margin-left: -70vw;
+    }
+    75% {
+        margin-left: -75vw;
+    }
+    80% {
+        margin-left: -82vw;
+    }
+    83% {
+        margin-left: -84vw;
+    }
+    86% {
+        margin-left: -86vw;
+    }
+    90% {
+        margin-left: -88vw;
+    }
+    92% {
+        margin-left: -90vw;
+    }
+    94% {
+        margin-left: -92vw;
+    }
+    95% {
+        margin-left: -93vw;
+    }
+    96% {
+        margin-left: -95vw;
+    }
+    97% {
+        margin-left: -96vw;
+    }
+    98% {
+        margin-left: -97vw;
+    }
+    99% {
+        margin-left: -98vw;
+    }
+    100% {
+        margin-left: -100vw;
+    }
+}
+
+@keyframes swipeOutKeyMobile {
+
+    0% {
+        margin-left: 0;
+    }
+    5% {
+        margin-left: -5vw;
+    }
+    10% {
+        margin-left: -10vw;
+    }
+    15% {
+        margin-left: -15vw;
+    }
+    20% {
+        margin-left: -20vw;
+    }
+    25% {
+        margin-left: -25vw;
+    }
+    30% {
+        margin-left: -30vw;
+    }
+    35% {
+        margin-left: -35vw;
+    }
+    40% {
+        margin-left: -40vw;
+    }
+    45% {
+        margin-left: -45vw;
+    }
+    50% {
+        margin-left: -50vw;
+    }
+    55% {
+        margin-left: -55vw;
+    }
+    60% {
+        margin-left: -60vw;
+    }
+    65% {
+        margin-left: -70vw;
+    }
+    70% {
+        margin-left: -75vw;
+    }
+    75% {
+        margin-left: -80vw;
+    }
+    80% {
+        margin-left: -85vw;
+    }
+    83% {
+        margin-left: -90vw;
+    }
+    86% {
+        margin-left: -100vw;
+    }
+    90% {
+        margin-left: -110vw;
+    }
+    92% {
+        margin-left: -120vw;
+    }
+    94% {
+        margin-left: -130vw;
+    }
+    95% {
+        margin-left: -140vw;
+    }
+    96% {
+        margin-left: -150vw;
+    }
+    97% {
+        margin-left: -160vw;
+    }
+    98% {
+        margin-left: -170vw;
+    }
+    99% {
+        margin-left: -180vw;
+    }
+    100% {
+        margin-left: -200vw;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 300px) {
+    .commercialTitle {
+        padding: 0;
+        font-size: 23px;
+        margin-top: 1rem;
+    }
+
+    .title {
+        line-height: 35px;
+        padding: 4px;
+        margin-top: 12px;
+    }
+    .overlay {
+        border: none;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+    }
+    .animatedMultipleOverlay {
+        width: 95%;
+        height: 100%;
+        max-height: 100%;
+    }
+    .container {
+        margin: 0;
+    }
+
+    .logoContainer {
+        max-width: 90%;
+    }
+
+    .swipeOut {
+        animation: swipeOutKeyMobile .1s linear;
+        animation-fill-mode: forwards;
+    }
+
+    .swipeIn {
+        animation: swipeInKeyMobile .1s linear;
+        animation-fill-mode: forwards;
+    }
+
+    .offerLogo {
+        max-width: 100%;
+    }
+
+    .offerLogoAnimatedMultiple {
+        max-width: 100%;
+    }
+
+    .offerButton {
+        font-size: 22px;
+        max-width: 90%;
+        margin-top: 4rem;
+    }
+
+    .additionalCTAContainer {
+        width: 90%;
+        padding-top: 1rem;
+    }
+
+    .additionalOfferCTA {
+        width: 100%;
+        font-size: 25px;
+        padding: 10px 0;
+    }
+
+    .offerContainer {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .offerContainerAnimatedMultiple {
+        padding: 0;
+    }
+    .hideMobile {
+        display: none;
+    }
+}

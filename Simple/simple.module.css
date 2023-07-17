@@ -1,0 +1,1844 @@
+.formPage {
+    padding-top: 25px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.formContent {
+    transition: top 2s ease 0s, opacity 0.1s ease 0s;
+    position: relative;
+    top: 0;
+    min-height: 20rem;
+    opacity: 1;
+}
+
+.zipPageContainer {
+    margin-top: -25px;
+}
+
+.articleFormContent {
+    margin-bottom: 2rem;
+}
+
+.contentHidden {
+    opacity: 1;
+    position: relative;
+    transition: top 2s ease 0s, opacity 0.1s ease 0s;
+    top: -300rem;
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-basis: 58.333333%;
+    max-width: 760px;
+    min-height: 465px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: white;
+}
+
+.formContainer {
+    top: 0;
+    padding-left: 3px;
+    min-height: 20rem;
+    border-radius: 3px;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2px;
+}
+
+.label {
+    display: block;
+    color: #333;
+    width: 100%;
+    margin: 15px 0 5px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 400;
+    text-transform: initial;
+}
+
+.title {
+    color: #333;
+    margin: 0 0 10px 5px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    -webkit-font-smoothing: antialiased;
+}
+
+.titleFinal {
+    font-size: 40px;
+}
+
+.initialCaps {
+    text-transform: initial;
+}
+
+.input {
+    color: #1c6ea5;
+    float: left;
+    border: 1px solid #d8d8d8;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    background: rgba(0, 0, 0, .05);
+    margin-top: 8px;
+    text-align: left;
+    font-weight: 700;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    text-align-last: left;
+}
+
+.emailInput {
+    color: #1c6ea5;
+    float: left;
+    border: 1px solid #d8d8d8;
+    padding: 18px;
+    font-size: 20px;
+    width: 320px;
+    background: rgba(0, 0, 0, .05);
+    margin-top: 8px;
+    text-align: left;
+    font-weight: 700;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    text-align-last: left;
+}
+
+.nameInput {
+    color: #1c6ea5;
+    float: left;
+    border: 1px solid #d8d8d8;
+    padding: 18px;
+    font-size: 20px;
+    width: 320px;
+    background: rgba(0, 0, 0, .05);
+    margin-top: 8px;
+    text-align: left;
+    font-weight: 700;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    text-align-last: left;
+}
+
+.nameInput:focus-visible {
+    outline-offset: 0;
+}
+
+.driverContainer {
+    padding-top: 20px;
+}
+
+.driverNamesInputContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.driverNumberLine {
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.nameInputContainer {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding-left: 2px;
+}
+
+.emailInputContainer {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding-left: 2px;
+}
+
+.removeDriverButton {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #2196F3;
+    width: 200px;
+}
+
+.removeDriverButton:hover {
+    text-decoration: underline;
+}
+
+.selectStyle {
+    color: #1c6ea5;
+    width: fit-content;
+    border: 1px solid #d8d8d8;
+    padding: 8px 50px 8px 16px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, .05);
+    margin-top: 8px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.listStyle {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.dobContainer {
+    width: 20rem;
+    border: 1px solid transparent;
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, .05);
+    align-items: center;
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.focusContainer {
+    background-color: #ffffff;
+    outline: 1px solid transparent;
+    border: 1px solid #3e4f84;
+}
+
+.dobSlash {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.dobInput {
+    color: #1c6ea5 !important;
+    width: 3.5rem;
+    border: none;
+    padding: 8px 0;
+    font-size: 20px;
+    background-color: transparent;
+    text-align: center;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.dobInput:-ms-input-placeholder, .dobInput::-ms-input-placeholder, .dobInput::placeholder {
+    color: #1c6ea5 !important;
+}
+
+.dobInput:focus-visible {
+    outline: 2px solid transparent;
+}
+
+.dobInput:autofill {
+    background-color: transparent !important;
+    color: #1c6ea5 !important;
+}
+
+.button {
+    color: #3e4f84;
+    width: 93%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin: 7px 0;
+    padding: 15px 11px;
+    font-size: 20px;
+    min-width: 45px;
+    min-height: 45px;
+    text-align: center;
+    transition: .15s;
+    word-break: break-word;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: #fafafa;
+}
+
+.button:hover {
+    border: 1px solid;
+}
+
+.buttonCredit > div:first-child {
+    float: left;
+    margin-right: 5px;
+}
+
+.contactButton {
+    color: #ffffff;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 11px;
+    max-width: 100%;
+    background: #00935d;
+    margin-top: 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    text-shadow: none;
+    border-bottom: none;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-width: 2px;
+    text-transform: uppercase;
+}
+
+.contactButton:hover {
+    border-color: #2196F3;
+}
+
+.error {
+    position: relative;
+    color: orange;
+    width: auto;
+    font-size: 20px;
+    margin-top: 10px;
+    border-left: 3px solid orange;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+.select {
+    color: #1c6ea5;
+    width: auto;
+    border: 1px solid #d8d8d8;
+    padding: 8px 50px 8px 16px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, .05);
+    margin-top: 8px;
+    text-align: center;
+    text-align-last: left;
+    font-weight: 700;
+    border-radius: 3px;
+}
+.vehicleYearSelect {
+    display: none;
+}
+.yearBuiltSelect {
+    color: #1c6ea5;
+    width: 18rem;
+    border: 1px solid #d8d8d8;
+    padding: 8px 50px 8px 16px;
+    font-size: 20px;
+    background: rgba(0,0,0,.05);
+    margin-top: 8px;
+    text-align: center;
+    text-align-last: center;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.loader{
+    margin: 0 auto;
+}
+
+.finalLoader {
+    fill: #ffffff;
+    margin: 0 auto;
+}
+.inputLabel {
+    color: #333;
+    width: 100%;
+    margin: 15px 0 5px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 400;
+    text-transform: initial;
+}
+
+.continueButtonContainer {
+    padding-left: 8px;
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+}
+
+.continueButton {
+    color: #00835a;
+    float: left;
+    width: auto;
+    border: 2px solid #00835a;
+    padding: 24px;
+    letter-spacing: .5px;
+    font-size: 14px;
+    margin-top: 2rem;
+    margin-left: 0;
+    text-transform: uppercase;
+}
+
+.continueButton:hover {
+    color: #00835a;
+    border: 2px solid #00835a;
+    font-size: 14px;
+    background: transparent;
+}
+
+.continueButton.blue {
+    color: #1c6ea5;
+    border: 2px solid #1c6ea5;
+}
+
+.continueButton.blue:hover {
+    color: #1ca141;
+    border: 2px solid #1ca141;
+}
+
+.altInput {
+    font-weight: 400 !important;
+    color: #1c6ea5 !important;
+}
+.altInput:focus {
+    color: #1ca141;
+    outline: none;
+    background: white;
+    box-shadow: none;
+    border-color: #1ca141;
+}
+
+.fullButton {
+    width: 100%;
+}
+
+.mWidth { max-width: 280px;}
+.smWidth { max-width: 240px;}
+
+.altButton {
+    color: #1c6ea5;
+}
+
+.altButton:hover {
+    border: 1px solid;
+}
+
+.altButton:focus {
+    color: #fff;
+    border: 0 solid #1ca141;
+    background: #1ca141;
+}
+
+.buttonActive {
+    color: #fff;
+    border: 0 solid #1ca141;
+    background: #1ca141;
+}
+
+
+.tcpaContainer {
+    padding: 0;
+    float: left;
+}
+
+.previousPageButton {
+    align-self: flex-start;
+    color: #999;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.providersContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    padding: 10px 0 45px 0;
+    width: 100%;
+    color: #2a2a2a;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1px dashed #eaeaea;
+    border-bottom: 1px dashed #eaeaea;
+}
+
+.rentersDropdownCoverage {
+    width: 225px;
+}
+
+.rentersDropdownYear {
+    width: 250px;
+}
+
+.headerContainer {
+    background: rgb(255, 255, 255);
+    font-family: Helvetica, sans-serif;
+    padding-top: 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
+}
+
+.logoContainer {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 8px;
+    padding-bottom: 10px;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 115px;
+    height: auto;
+    max-width: 115px;
+}
+
+.headerText {
+    flex: 2 0;
+    color: #666;
+    margin: 0 0 0 1em;
+    display: inline-block;
+    padding: 0 0 0 1em;
+    font-size: 16px;
+    border-left: 1px solid #d8d8d8;
+    font-weight: 400;
+    line-height: 1;
+    text-shadow: none;
+}
+
+.phoneContainer {
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: inline-flex;
+    text-align: right;
+    padding-right: 5rem;
+}
+
+.headerCTAContainer {
+    display: inline-flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    justify-content: center;
+}
+
+.phoneNumberContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 19px;
+    color: #787678;
+}
+
+.phoneNumber {
+    display: block;
+    margin-top: -8px;
+    color: #008bff;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.phoneNumber:hover {
+    opacity: .8;
+}
+
+.speakText {
+    margin-top: 2px;
+}
+
+.availableContainer {
+    margin-top: -8px;
+    padding-bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.availableCircle {
+    color: #71b333;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-top: 3px;
+    line-height: .5;
+    margin-right: 3px;
+}
+
+.availableText {
+    color: #787678;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.operator {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactInputContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding-left: 2px;
+}
+
+.contactInput {
+    color: #1c6ea5;
+    float: left;
+    border: 1px solid #d8d8d8;
+    padding: 15px;
+    font-size: 20px;
+    width: 320px;
+    background: rgba(0, 0, 0, .05);
+    margin-top: 8px;
+    text-align: left;
+    font-weight: 700;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    text-align-last: left;
+}
+.addressText {
+    color: #3e4f84;
+    margin: 0 5px 20px;
+    font-size: 20px;
+    font-style: normal;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footerContainer {
+    background-color: #ffffff;
+}
+
+.footerLinksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    line-height: 2em;
+    font-size: 11px;
+}
+
+.footerLinksContainer a {
+    margin: auto 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #787678;
+}
+
+.copyRight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    color: #787678;
+    line-height: 2em;
+}
+
+.mcAfeeLogo {
+    border: 1px solid #000;
+    margin: 1rem auto 1rem auto;
+    max-width: 115px;
+    height: 55px;
+}
+
+.disclaimer {
+    color: #787678;
+    padding: 0 20px 2rem 20px;
+    font-size: 11px;
+    max-width: 100%;
+    font-family: Helvetica, sans-serif;
+    line-height: 18px;
+}
+
+.progressContainer {
+    display: block;
+    margin-top: 35px
+}
+
+.progress {
+    height: 12px;
+    overflow: visible;
+    margin-bottom: 20px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+
+.progressBar {
+    background-color: #00935d;
+    height: 100%;
+    text-align: center;
+    transition: width .6s ease;
+    border-radius: 10px;
+}
+
+.providersGrid {
+    max-width: 1008px;
+}
+
+.progressPercentage {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #08c177;
+    margin-bottom: 12px;
+}
+
+.questionLabel {
+    color: #999;
+    margin: 0 0 0 5px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.showPercentTextProgress {
+    height: 12px;
+    overflow: visible;
+    margin-bottom: 50px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+
+.showPercentTextProgressBar {
+    background-color: #08c177;
+    height: 100%;
+    text-align: center;
+    transition: width .6s ease;
+    border-radius: 10px;
+}
+
+.callText {
+    margin: 1.33rem 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(100, 100, 100);
+}
+
+.callAgentTitle {
+    margin-top: 4px;
+    margin-bottom: 1em;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.callAgentButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px;
+    color: #2196f3;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    background: #eee;
+    border: 1px solid #008bff;
+    border-radius: 0.25em;
+}
+
+.phoneIcon {
+    max-width: 15px;
+    margin-right: 15px;
+}
+
+.callTextContainer {
+    margin: 0;
+    padding: 1rem 15px 1rem;
+}
+
+.yearBuiltSelect {
+    color: #1c6ea5;
+    width: 18rem;
+    border: 1px solid #d8d8d8;
+    padding: 8px 50px 8px 16px;
+    font-size: 20px;
+    background: rgba(0,0,0,.05);
+    margin-top: 8px;
+    text-align: center;
+    text-align-last: center;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.articlePageContainer {
+    max-width: 100vw;
+    flex-basis: 100%;
+}
+
+.zipContainer {
+    height: 708px;
+    margin-top: -25px;
+}
+.zipContent {
+    position: absolute;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 708px;
+}
+
+.backgroundImageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 708px;
+    width: 100%;
+}
+
+.backgroundImageContainer:after {
+    display: block;
+    background: #0A081B;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    position: absolute;
+    content: '';
+    opacity: .6;
+}
+
+.articleZip {
+    background: url('/icons/pin_gray.svg') no-repeat;
+    background-size: 20px;
+    background-position-y: 15px;
+    background-position-x: 15px;
+    background-color: white;
+    width: 22rem;
+    height: 60px;
+    padding: 10px 10px 10px 50px;
+}
+
+.articleContinueButton {
+    position: relative;
+    width: 22rem;
+    background-color: #E63946;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 23px;
+    padding: 12px;
+    height: 60px;
+}
+
+.articleContinueButtonIcon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 1.5rem;
+}
+
+.articleZipIcons {
+    display: block;
+    margin: 1rem auto;
+    height: 2.5em;
+    width: 3.5em;
+}
+
+.articleListStyle {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.articleInputContainer {
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.zipContainerTitle {
+    font-size: 47px;
+    font-weight: 600;
+    max-width: 1100px;
+    text-align: center;
+}
+.zipContainerSubtitle {
+    font-size: 32px;
+    color: #9AE7EA;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 100%;
+    margin: 1rem auto 2rem;
+    max-width: 90vw;
+}
+
+.transunionTitle {
+    font-size: 20px!important;
+    margin: 20px 0 10px 2.5%!important;
+    padding-bottom: 10px;
+    font-weight: 600!important;
+    color: rgb(79, 71, 71)!important;
+}
+
+
+.belowZipSection {
+    text-align: center;
+}
+.belowZipTitle {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.iconInfoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.iconInfoContainer>div {
+    padding: 12px;
+    font-size: 21px;
+}
+
+.sectionTitles {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.sectionSubTitles {
+    color: #3e2888;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.paragraph {
+    line-height: 1.5rem;
+    color: rgb(56, 54, 60);
+    font-size: 16px;
+    word-spacing: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.listItems {
+    line-height: 1.5rem;
+    color: rgb(56, 54, 60);
+    font-size: 16px;
+    word-spacing: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    list-style-type: initial;
+    margin-left: 2rem;
+}
+.listItems>li {
+    line-height: 1.5rem;
+    font-size: 16px;
+    word-spacing: 0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.contentGridContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.widthContentGrid {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    margin-left: 6rem;
+    border: 0.3rem solid #dcdbe4;
+    width: 340px;
+    min-width: 340px;
+}
+
+.articles h2 {
+    display: inline-block;
+    margin: 0 auto;
+    top: -1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 0 2rem 1rem;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+}
+
+.articleRelatedItem{
+    align-items: center;
+    display: flex;
+    margin-bottom: 0.25rem;
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.articleRelatedImg {
+    max-width: 120px;
+    min-width: 120px;
+    margin-right: 1rem;
+}
+
+.articleRelatedImg img {
+    border-radius: 0.2rem;
+    width: 100%;
+}
+
+.articleRelatedTitle {
+    color: #636273;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.articleRelatedTitleCategory {
+    color: #3dd6d0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.articleRelatedTitle h3 {
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+.contentContainer {
+    width: 100%;
+}
+
+.authorContainer {
+    display: inline-flex;
+    flex-direction: row;
+    opacity: .5;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+.author {
+    margin-right: 10px;
+}
+
+.adContainer {
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
+}
+
+.adContainerTitleButton {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 0px auto -18px auto;
+    font-size: 15px;
+    background-color: #0ba2ff;
+    color: #fff;
+    padding: 8px 4rem;
+}
+
+.adContainerContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 45px 0 45px;
+}
+
+.adContainerLogo {
+    display: block;
+    position: relative;
+    margin: 0 auto 10px auto;
+    height: auto;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+}
+
+.adContainerBullets {
+    width: 50%;
+}
+
+.adContainerBullets li {
+    position: relative;
+    list-style-type: none;
+    font-size: 16px;
+    padding-left: 1.5rem;
+}
+
+.adContainerBullets li:before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 10px;
+    color: #949494;
+}
+
+.adContainerBullets li + li {
+    margin-top: 0.5rem;
+}
+
+.pointRight {
+    width: 40px;
+    height: 40px;
+    color: rgb(59 130 246 / 1);
+}
+
+.getQuote {
+    display: flex;
+    align-items: center;
+    color: #0b79ff;
+    text-decoration: underline;
+}
+
+.getQuoteMobile {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+    .zipPageContainer {
+        margin-top: 0;
+    }
+    .phoneContainer {
+        text-align: center;
+        padding-right: 0;
+    }
+    .continueButtonSquareFeet {
+        margin: 0;
+    }
+    .button {
+        font-size: 14px;
+    }
+
+    .continueButton {
+        margin-left: 30px;
+    }
+    .listStyle {
+        padding: 0 15px;
+    }
+
+    .title {
+        color: #333;
+        float: none;
+        width: 100%;
+        margin: 0 0 1rem;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 700;
+        line-height: 1.25;
+    }
+
+    .input {
+        float: none;
+        width: 100% !important;
+        margin-top: 15px;
+        margin-left: 5px;
+        padding: 11px 0 11px 2px;
+        max-width: 100%;
+        text-align: center;
+        text-align-last: center;
+    }
+
+    .driverNamesInputContainer {
+        margin: auto;
+        width: 95%;
+    }
+
+    .driverNumberLine {
+        padding-left: 23px;
+    }
+
+    .nameInputContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .emailInputContainer {
+        display: flex;
+        text-align: center;
+        width: 50%;
+    }
+
+    .emailContainer {
+        display: flex;
+        justify-items: flex-start;
+        width: 95%;
+        margin: auto;
+    }
+
+    .nameInput {
+        float: none;
+        width: 100% !important;
+        margin-top: 15px;
+        margin-left: 5px;
+        padding: 11px 0 11px 2px;
+        max-width: 100%;
+        text-align: center;
+        text-align-last: center;
+    }
+
+    .contactInputContainer {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .contactInput {
+        width: 360px !important;
+        margin: 0;
+        padding: 12px;
+    }
+
+    .addressText {
+        color: #3e4f84;
+        font-size: 20px;
+        font-style: normal;
+        text-align: left;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .articleContinueButton {
+        margin-top: 15px !important;
+    }
+
+    .label {
+        text-align: center
+    }
+
+    .yearBuiltSelect {
+        margin-left: 18px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .continueButtonContainer {
+        padding: 0;
+        flex-grow: 0;
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .phoneContainer { margin-right: 5px; }
+    .operatorContainer {display: none; }
+    .zipContent {
+        position: relative;
+        padding-bottom: 2rem;
+        height: 100%;
+    }
+
+    .dobContainer {
+        width: 100%;
+    }
+
+    .continueButton {
+        color: #1c6da4;
+        width: 100%;
+        padding: 15px;
+        margin: 0 0 0 auto;
+        border-color: #1c6da4;
+    }
+
+    .continueButton:hover {
+        color: #1c6da4;
+        border-color: #1c6da4;
+    }
+
+    .vehicleYearButton {
+        flex-grow: 0;
+        max-width: 25%;
+        flex-basis: 25%;
+    }
+
+    .vehicleMakeButton {
+        flex-grow: 0;
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+
+    .vehicleModelButton {
+        flex-grow: 0;
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .input {
+        margin-bottom: 0;
+        margin-top: 9px;
+        padding: 20px 16px 20px 16px;
+    }
+    .inputContainer {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .zipContainer {
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .zipContentContainer {
+        background-color: #0A081B;
+        padding: 0 15px;
+    }
+
+    .backgroundImageContainer {
+        height: 600px;
+        width: 115%;
+    }
+
+    .articleZip {
+        text-align: left;
+        text-align-last: left;
+        margin-bottom: 5px;
+        padding: 10px 10px 10px 50px;
+    }
+
+    .belowZipSection {
+        width: 100%;
+    }
+
+
+    .driverNamesInputContainer{
+        display: flex;
+        margin: 0 auto 1rem auto;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .articleProvidersGrid {
+        margin-top: 1.5rem;
+        padding: 0 15px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .widthContentGrid {
+        flex-direction: column;
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .sectionTitles, .sectionSubTitles, .adContainer {
+        margin-bottom: 1rem;
+    }
+
+    .adContainer {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .contentGridContainer {
+        margin-bottom: 1rem;
+    }
+
+    .articles {
+        max-width: 100%;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .driverNumberLine {
+        padding-left: 5px;
+    }
+
+    .nameInputContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .emailInputContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .emailContainer {
+        display: flex;
+        justify-items: flex-start;
+        width: 100%;
+        margin: auto;
+    }
+
+    .nameInput {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contactInputContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        padding-left: 0;
+    }
+
+    .contactInput {
+        width: 100% !important;
+        padding: 12px;
+    }
+
+    .addressText {
+        color: #3e4f84;
+        font-size: 13px;
+        font-style: italic;
+        text-align: center;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .input {
+        margin-left: 0;
+    }
+
+    .rentersDropdownCoverage {
+        width: 100%;
+    }
+
+    .rentersDropdownYear {
+        width: 100%;
+    }
+    .yearBuiltSelect {
+        width: 95%;
+        margin-left: 20px;
+    }
+    .vehicleYearSelect {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        text-align: center;
+        text-align-last: center;
+    }
+    .error {
+        color: #ffffff;
+        width: 100%;
+        margin: 10px 0;
+        padding: 5px 10px 5px 5px;
+        font-size: 16px;
+        background: orange;
+        text-align: center;
+        transition: .3s;
+        border-left: 0 solid orange;
+    }
+    .title {
+        margin-bottom: 0 !important;
+    }
+    .adContainer {
+        height: auto;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .articleContinueButton {
+        margin-top: 8px !important;
+    }
+    .adContainerContent {
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem 2rem 0;
+        width: 100%;
+    }
+    .adContainerLogo {
+        padding-bottom: 40px;
+        width: 90%;
+    }
+    .adContainerBullets {
+        width: 100%;
+    }
+    .adContainerTitleButton {
+        width: 100%;
+        margin-right: auto;
+        margin-bottom: -40px;
+    }
+    .getQuote {
+        display: none;
+    }
+    .getQuoteMobile {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        color: #0b79ff;
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .backgroundImageContainer {
+        height: 645px;
+        width: 115%;
+    }
+}
+
+/* your css rules for ipad Pro portrait */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .operatorContainer { display: none !important; }
+    .phoneContainer { flex-direction: column; margin-right: 5px; }
+}
+
+/* Retina styles here */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2.0),
+only screen and (   min--moz-device-pixel-ratio: 2.0),
+only screen and (     -o-min-device-pixel-ratio: 2.0/1),
+only screen and (        min-device-pixel-ratio: 2.0),
+only screen and (                min-resolution: 264dpi),
+only screen and (                min-resolution: 2.0dppx) {
+    .operatorContainer { display: none !important; }
+    .phoneContainer { flex-direction: row; margin-right: 5px; }
+}
+
+/* your css rules for ipad Air portrait */
+@media only screen and (min-width: 820px) and (orientation: portrait) {
+    .operatorContainer { display: none !important; }
+    .phoneContainer { flex-direction: column; margin-right: 5px; }
+}
+
+/* your css rules for ipad portrait */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .operatorContainer { display: none !important; }
+    .phoneContainer { flex-direction: column; margin-right: 5px; }
+}
+
+@media only screen and (max-width: 767px) {
+    .select {
+        width: 100%;
+        padding: 8px 0 8px 17px;
+        text-align-last: left;
+    }
+    .formPage {
+        padding: 0;
+    }
+    .vehicleYearSelect {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        text-align: center;
+        text-align-last: center;
+    }
+    .nameInput {
+        padding: 9px 0;
+        margin-top: 3px;
+    }
+    .emailInput {
+        padding: 9px 0;
+        margin-top: 3px;
+    }
+    .emailInputContainer {
+        margin-top: -15px;
+    }
+    .providersContainer {
+        display: none;
+    }
+    .headerContainer {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #1c6da4;
+        background-color: #1c6da4;
+    }
+
+    .headerText, .phoneContainer {
+        display: none;
+    }
+
+    .footerContainer {
+        color: white;
+        padding: 20px 15px;
+        font-size: .8rem;
+        text-align: center;
+        background-color: #1c6da4;
+    }
+
+    .footerLinksContainer {
+        width: 91.666667%;
+        margin: 0 auto 12px auto;
+        padding: 0 30px;
+    }
+
+    .footerLinksContainer a, .copyRight, .disclaimer {
+        color: #ffffff;
+    }
+
+    .callTextContainer {
+        padding: 15px;
+        background-color: #1c6da4;
+    }
+
+    .callAgentTitle {
+        font-size: 1.17em;
+    }
+
+    .callAgentButton {
+        color: #1c6da4;
+        border-color: #1c6da4;
+        width: 97%;
+    }
+
+    .callTextContainer {
+        margin-top: -1px;
+        margin-bottom: -1px;
+        padding: 15px;
+        background-color: #1c6da4;
+    }
+    .callAgentTitle {
+        font-size: 1.17em;
+    }
+    .callAgentButton {
+        color: #1c6da4;
+        border-color: #1c6da4;
+        width: 97%;
+    }
+
+    .pageContainer {
+        margin: 0;
+        padding: 0 14px;
+        min-height: 40vh;
+        background-color: #1c6da4;
+    }
+    .formContainer {
+        min-height: auto;
+        transition: top .6s,opacity 5s, false .6s;
+        padding: 25px 15px;
+        justify-content: center;
+    }
+    .formContent {
+        min-height: 0;
+        background-color: white;
+        padding: 15px 15px 2rem;
+        border-radius: 6px;
+    }
+
+    .previousPageButton {
+        display: none;
+    }
+
+    .progressContainer {
+        padding-top: 4px;
+        margin: 0 0 10px;
+    }
+    .progress, .showPercentTextProgress {
+        background-color: rgba(0,0,0,0.2);
+        margin-bottom: 10px;
+    }
+    .progressPercentage {
+        color: #ffffff;
+        margin-top: 6px;
+    }
+    .continueButton {
+        width: 100%;
+    }
+    .yearSelect {
+        text-align: center;
+    }
+    .buttonContainerDefault {
+        display: flex;
+    }
+    .mWidth, .smWidth { max-width: 100%;}
+
+    .button {
+        padding: 15px 8px;
+        width: 100%;
+    }
+
+    .articleHeaderContainer {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-bottom: 0 solid #ddd;
+        background-color: #ffffff;
+    }
+
+    .zipContainerTitle {
+        font-size: 26px;
+        line-height: 1.25;
+    }
+
+    .zipContainerSubtitle {
+        font-size: 22px;
+        text-align: center;
+        line-height: 1.25;
+        margin-bottom: 1rem;
+    }
+
+    .iconInfoContainer {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .iconInfoContainer>div {
+        font-size: 18px;
+        padding-left: 5px;
+    }
+
+    .articleListStyle {
+        padding: 0;
+    }
+
+    .articleZipIcons {
+        display: inline-block;
+        height: 2.25em;
+        width: 2.25rem;
+        margin: 0 1rem 0 0;
+    }
+
+    .articleInputContainer {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .articleContinueButton {
+        font-size: 23px;
+        padding: 0;
+    }
+
+    .backgroundImageContainer {
+        height: 325px;
+        width: 115%;
+    }
+
+    .belowZipTitle {
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    .articleRelatedItem{
+        background-color: #fff;
+        color: #636273;
+        text-decoration: none;
+        margin-bottom: 1rem;
+    }
+
+    .label {
+        font-size: 16px;
+        text-align: center;
+    }
+    .error {
+        color: #ffffff;
+        width: 100%;
+        margin: 10px 0;
+        padding: 5px 10px 5px 5px;
+        font-size: 16px;
+        background: orange;
+        text-align: center;
+        transition: .3s;
+        border-left: 0 solid orange;
+    }
+    .titleFinal {
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    .pageContainer {
+        margin: -1px 0 0 0;
+        padding: 0 14px;
+        min-height: 40vh;
+        background-color: #1c6da4;
+    }
+
+    .formContainer {
+        min-height: auto;
+        transition: top .6s, opacity 5s, false .6s;
+        padding: 25px 15px;
+        justify-content: center;
+    }
+
+    .articlePageContainer {
+        background-color: #ffffff;
+        padding: 0;
+    }
+
+    .formContent {
+        min-height: 0;
+        background-color: white;
+        padding: 15px 15px 2rem;
+        border-radius: 6px;
+    }
+
+    .articleFormContent {
+        padding: 15px 0 0;
+    }
+
+    .previousPageButton {
+        display: none;
+    }
+
+    .progress, .showPercentTextProgress {
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+    }
+
+    .progressPercentage {
+        color: #ffffff;
+    }
+
+    .continueButton, .dobContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .yearSelect {
+        text-align: center;
+    }
+
+    .buttonContainerDefault {
+        display: flex;
+    }
+
+    .label {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .yearBuiltSelect {
+        width: 95%;
+        margin-left: 20px;
+    }
+}
+

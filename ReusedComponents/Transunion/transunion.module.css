@@ -1,0 +1,55 @@
+.container {
+    margin: -10px auto 2rem;
+    width: 900px;
+    max-width: 90vw;
+}
+
+.title {
+    margin-left: 2.5%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgb(79, 71, 71);
+}
+
+.sectionContainer {
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 0 8px -5px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 6px;
+}
+
+
+.section {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+    min-height: 60px;
+}
+
+.section:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 6px;
+}
+
+.sectionText {
+    font-size: 18px;
+}
+
+.removeButtonContainer {
+    margin-left: 10px;
+}
+
+.removeButton {
+    background: #ff0f0f;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 18px;
+}

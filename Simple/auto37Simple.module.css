@@ -1,0 +1,50 @@
+.dobContainer {
+    width: 15rem;
+    border: 1px solid #1ca141;
+    border-radius: 3px;
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    background: #ffffff;
+    align-items: center;
+    margin-left: 0px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.focusContainer {
+    background-color: #ffffff;
+    outline: 1px solid transparent;
+    border: 1px solid #3e4f84;
+}
+
+.dobSlash {
+    color: #1c6ea5;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.dobInput {
+    color: #1c6ea5 !important;
+    width: 3.5rem;
+    border: none;
+    padding: 8px 0px;
+    font-size: 20px;
+    background-color: transparent;
+    text-align: center;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.dobInput:focus-visible {
+    outline: 2px solid transparent;
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .dobContainer {
+        width: 100%;
+    }
+}
